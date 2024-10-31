@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}" />
+</head>
+<body>
+    <div class="shop">
+        <div class="product-section">
+            <div class="sidebar">
+                {% for img in product.thumbnailImages %}
+                    <img class="imgside" src="{{ img }}" alt="Thumbnail">
+                {% endfor %}
+            </div>
+            <div class="imgma"><img class="mainimg" src="{{ product.mainImage }}" alt="Product image"></div>
+            <div class="txt">
+                <h2 class="title">{{ product.title }}</h2>
+                <p class="dealer" style="font-family: math; color: purple;">{{ product.dealer }}</p>
+                <p class="des1">{{ product.description }}</p>
+            </div>
+            <div class="price">
+                <p id="selectedColor">Selected Color:</p>
+                <select class="circle" id="colorSelect"> 
+                    {% for color in product.colorOptions %}
+                        <option>{{ color }}</option>
+                    {% endfor %}
+                </select>                
+                <p style="color: blue; font-size: 2vw;">{{ product.price }}</p>
+                <p id="size">Size</p>
+                <select id="sizeSelect">
+                    {% for size in product.sizes %}
+                        <option>{{ size }}</option>
+                    {% endfor %}
+                </select>
+                <input class="quan" type="number" value="1" id="quantityInput"> Quantity</input>
+                <p style="color: royalblue;">Special Price</p>
+                <p>⭐⭐⭐⭐</p>
+                <p id="rate">4.5 ★</p>
+                <p style="color: red;">Free Delivery</p>
+            </div>
+        </div>
+        <div class="color">
+            <button style="font-size: 1.7vw;" class="button2" onclick="goToCheckout()">Buy Now</button> 
+        </div>
+    </div>
+    <script>
+        const colorSelect = document.getElementById('colorSelect');
+        const mainImage = document.querySelector('.mainimg');
+        const thumbnailImages = document.querySelectorAll('.imgside');
+        const selectedColorDisplay = document.getElementById('selectedColor');
+        
+        colorSelect.addEventListener('change', () => {
+            selectedColorDisplay.textContent = `Selected Color: ${colorSelect.value}`;
+            const selectedColor = colorSelect.value;
+            const colorToImage = {
+                "Yellow": "./static/gokuyello.jpeg",
+                "Peach": "./static/gokuskin.jpeg",
+                "Black": "./static/gokublac.jpeg",
+                "White":  "./static/gokuwhite.jpeg",
+                "Beige": "./static/2d09cadb6513ea1acbf4cd285523f3c7.jpg"
+            };
+            mainImage.src = colorToImage[selectedColor];
+        });
+        thumbnailImages.forEach(img => {
+            img.addEventListener('click', () => {
+                selectedColorDisplay.textContent = `Selected Color: ${img.alt}`;
+                mainImage.src = img.src; 
+            });
+        });
+
+        function goToCheckout() {
+            // Get the selected values
+            const selectedColor = document.getElementById('colorSelect').value;
+            const selectedSize = document.getElementById('sizeSelect').value;
+            const quantity = document.getElementById('quantityInput').value;
+
+            // Construct the URL with query parameters
+            const checkoutUrl = `{{ url_for('checkout') }}?selectedColor=${selectedColor}&selectedSize=${selectedSize}&quantity=${quantity}`;
+
+            // Redirect to the checkout page
+            window.location.href = checkoutUrl;
+        }
+    </script>
+    <script src="{{ url_for('static', filename='js.js') }}"></script>
+</body>
+</html>
