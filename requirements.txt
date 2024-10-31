@@ -1,4 +1,4 @@
-nltk==3.8.2
+nltk
 pip==24.3.1
 alembic==1.13.3
 annotated-types==0.7.0
