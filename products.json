@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1,
+    "name": "Goku",
+    "scopes": [],
+    "apiResources": [],
+    "proxies": [],
+    "title": "Goku Oversized T-Shirt",
+    "dealer": "Hayman Clothing",
+    "description": "Pack of one oversized t-shirt round neck with a back print of Goku character. Soft Cotton with excellent comfort.",
+    "price": "\u20B9 850",
+    "colorOptions": ["Beige", "Black", "Peach", "White", "Yellow"],
+    "sizes": ["S", "M", "L", "XL"],
+    "mainImage": "./static/2d09cadb6513ea1acbf4cd285523f3c7.jpg",
+    "thumbnailImages": [
+        "./static/gokuyello.jpeg",
+        "./static/gokublac.jpeg",
+        "./static/gokuskin.jpeg",
+        "./static/gokuwhite.jpeg",
+        "./static/2d09cadb6513ea1acbf4cd285523f3c7.jpg"
+    ]
+  },
+  
+  {
+    "id": 2,
+    "name": "Joker",
+    "scopes": [],
+    "apiResources": [],
+    "proxies": [],
+    "title": "Joker Oversized T-Shirt",
+    "dealer": "Hayman Clothing",
+    "description": "Pack of one oversized t-shirt round neck with a back print of Goku character. Soft Cotton with excellent comfort.",
+    "price": "\u20B9 850",
+    "colorOptions": ["Purple", "Black", "Pink", "White", "Blue"],
+    "sizes": ["S", "M", "L", "XL"],
+    "mainImage": "./static/jokerpurple.jpeg",
+    "thumbnailImages": [
+      "./static/jokerblue.jpeg",
+        "./static/jokerfront.jpeg",
+        "./static/koerblack.jpeg",
+        "./static/jokerpink.jpeg",
+        "./static/jokerwhite.jpeg"
+    ]
+  }, 
+  {
+    "id": 3,
+    "name": "Skull",
+    "scopes": [],
+    "apiResources": [],
+    "proxies": [],
+    "title": "Skulll Half Sleeve T-Shirt",
+    "dealer": "Hayman Clothing",
+    "description": "Pack of one oversized t-shirt round neck with a back print of Goku character. Soft Cotton with excellent comfort.",
+    "price": "\u20B9 850",
+    "colorOptions": ["Red", "Black", "Yellow", "White", "Blue"],
+    "sizes": ["S", "M", "L", "XL"],
+    "mainImage": "./static/skullyellow.jpeg",
+    "thumbnailImages": [
+      "./static/skullblue.jpeg",
+        "./static/skullred.jpeg",
+        "./static/skullwhite.jpeg",
+        "./static/skullyellow.jpeg",
+        "./static/2d09cadb6513ea1acbf4cd285523f3c7.jpg"
+    ]
+  }, 
+  {
+    "id": 4,
+    "name": "Kid",
+    "scopes": [],
+    "apiResources": [],
+    "proxies": [],
+    "title": "Kid OversizedT-Shirt",
+    "dealer": "Hayman Clothing",
+    "description": "Pack of one oversized t-shirt round neck with a back print of Goku character. Soft Cotton with excellent comfort.",
+    "price": "\u20B9 850",
+    "colorOptions": ["Red", "Black", "Yellow", "White", "Blue"],
+    "sizes": ["S", "M", "L", "XL"],
+    "mainImage": "./static/kidu.jpg",
+    "thumbnailImages": [
+      "./static/kid1.jpg",
+        "./static/kid1.jpg",
+        "./static/kid1.jpg",
+        "./static/kid1.jpg",
+        "./static/kid1.jpg"
+    ]
+  }, 
+  {
+    "id": 5,
+    "name": "Girl",
+    "scopes": [],
+    "apiResources": [],
+    "proxies": [],
+    "title": "Girl Half Sleeve T-Shirt",
+    "dealer": "Hayman Clothing",
+    "description": "Pack of one oversized t-shirt round neck with a back print of Goku character. Soft Cotton with excellent comfort.",
+    "price": "\u20B9 850",
+    "colorOptions": ["Beige", "Black", "Pink", "Purple", "Yellow"],
+    "sizes": ["S", "M", "L", "XL"],
+    "mainImage": "./static/girlblack.jpeg",
+    "thumbnailImages": [
+      "./static/girlpink2.jpeg",
+        "./static/girlbrown.jpeg",
+        "./static/girlpe.jpeg",
+        "./static/gitlpink.jpeg",
+        "./static/girlpurp.jpeg"
+    ]
+  }, 
+  {
+    "id": 6,
+    "name": "Naruto",
+    "scopes": [],
+    "apiResources": [],
+    "proxies": [],
+    "title": "Naruto Half Sleeve T-Shirt",
+    "dealer": "Hayman Clothing",
+    "description": "Pack of one oversized t-shirt round neck with a back print of Goku character. Soft Cotton with excellent comfort.",
+    "price": "\u20B9 850",
+    "colorOptions": ["Red", "Black", "Yellow", "White", "Blue"],
+    "sizes": ["S", "M", "L", "XL"],
+    "mainImage": "./static/narutotwo.jpeg",
+    "thumbnailImages": [
+      "./static/narutoblack.jpeg",
+        "./static/narutotwo.jpeg",
+        "./static/narutowhitw.jpeg",
+        "./static/narutoblue.jpeg",
+        "./static/narutored.jpeg"
+    ]
+  }
+]
